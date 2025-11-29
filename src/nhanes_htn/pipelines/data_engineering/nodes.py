@@ -249,3 +249,22 @@ def scale_features(
         scaler = StandardScaler()
 
     return df_scaled, scaler
+
+
+def select_features(
+    df: pd.DataFrame,
+    feature_columns: list[str],
+) -> pd.DataFrame:
+    """
+    Selecciona explícitamente las columnas de features que se usarán para modelado.
+
+    - df: normalmente nhanes_model_input_scaled (features numéricas ya estandarizadas).
+    - feature_columns: lista de nombres de columnas a conservar.
+
+    Devuelve:
+      - DataFrame con sólo las columnas seleccionadas.
+    """
+    # Filtrar solo columnas que realmente existen, por seguridad
+    cols = [c for c in feature_columns if c in df.columns]
+    df_features = df[cols].copy()
+    return df_features

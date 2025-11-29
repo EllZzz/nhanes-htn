@@ -47,6 +47,10 @@ nhanes_model_input_scaled:
   type: pandas.CSVDataset
   filepath: data/05_model_input/nhanes_model_input_scaled.csv
 
+nhanes_features_selected:
+  type: pandas.CSVDataset
+  filepath: data/05_model_input/nhanes_features_selected.csv
+
 
 # 06_models: artefactos de modelos
 regression_model:

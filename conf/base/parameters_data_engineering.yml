@@ -17,3 +17,26 @@ scale_columns:
   - moderate_recreation_days
   - work_activity_minutes
   - sedentary_minutes
+
+selected_feature_columns:
+  # Demografía / SES
+  - age_years
+  - income_poverty_ratio
+  - gender_code
+  - race_ethnicity_code
+  - education_level_code
+
+  # Antropometría (evitando redundancia)
+  - bmi
+  - waist_cm
+
+  # Actividad física y sedentarismo
+  - transport_activity_code
+  - transport_activity_minutes
+  - vigorous_recreation_code
+  - vigorous_recreation_minutes
+  - moderate_recreation_code
+  - moderate_recreation_minutes
+  - work_activity_code
+  - work_activity_minutes
+  - sedentary_minutes

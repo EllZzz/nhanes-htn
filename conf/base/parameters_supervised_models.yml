@@ -1,0 +1,2 @@
+supervised_test_size: 0.2
+supervised_random_state: 42

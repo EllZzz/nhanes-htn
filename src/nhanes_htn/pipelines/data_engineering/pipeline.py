@@ -84,6 +84,7 @@ def create_pipeline(**kwargs) -> Pipeline:
                 name="impute_and_cast",
             ),
 
+            # 8) Escalado de features
             node(
                 func=nodes.scale_features,
                 inputs=dict(
@@ -94,5 +95,15 @@ def create_pipeline(**kwargs) -> Pipeline:
                 name="scale_features",
             ),
 
+            # 9) Selección de features finales
+            node(
+                func=nodes.select_features,
+                inputs=dict(
+                    df="nhanes_model_input_scaled",
+                    feature_columns="params:selected_feature_columns",
+                ),
+                outputs="nhanes_features_selected",
+                name="select_features",
+            ),
         ]
     )
