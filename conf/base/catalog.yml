@@ -1,0 +1,76 @@
+# 02_intermediate: inputs para el pipeline de ingeniería de datos
+set1_demographic:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/set1_demographic.csv
+
+set2_demographic:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/set2_demographic.csv
+
+set1_body_measurements:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/set1_body_measurements.csv
+
+set2_body_measurements:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/set2_body_measurements.csv
+
+set1_blood_pressure:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/set1_blood_pressure.csv
+
+set2_blood_pressure:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/set2_blood_pressure.csv
+
+set1_questionnaire:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/set1_questionnaire.csv
+
+set2_questionnaire:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/set2_questionnaire.csv
+
+
+# 03_primary: salidas “limpias”
+nhanes_supervised_dataset:
+  type: pandas.CSVDataset
+  filepath: data/03_primary/nhanes_supervised_dataset.csv
+
+clustering_dataset:
+  type: pandas.CSVDataset
+  filepath: data/03_primary/nhanes_clusters.csv
+
+
+# 05_model_input: datos listos para modelos
+nhanes_model_input_scaled:
+  type: pandas.CSVDataset
+  filepath: data/05_model_input/nhanes_model_input_scaled.csv
+
+
+# 06_models: artefactos de modelos
+regression_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/regression_model.pkl
+
+classification_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/classification_model.pkl
+
+feature_scaler:
+  type: pickle.PickleDataset
+  filepath: data/06_models/feature_scaler.pkl
+
+
+# 08_reporting: métricas
+regression_metrics:
+  type: json.JSONDataset
+  filepath: data/08_reporting/regression_metrics.json
+
+classification_metrics:
+  type: json.JSONDataset
+  filepath: data/08_reporting/classification_metrics.json
+
+clustering_metrics:
+  type: json.JSONDataset
+  filepath: data/08_reporting/clustering_metrics.json

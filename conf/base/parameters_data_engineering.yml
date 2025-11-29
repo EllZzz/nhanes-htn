@@ -1,0 +1,19 @@
+cycle_2015_2016_label: "2015_2016"
+cycle_2017_2018_label: "2017_2018"
+min_age: 18
+
+scale_columns:
+  - age_years
+  - income_poverty_ratio
+  - weight_kg
+  - height_cm
+  - bmi
+  - waist_cm
+  - transport_activity_minutes
+  - transport_activity_days
+  - vigorous_recreation_minutes
+  - vigorous_recreation_days
+  - moderate_recreation_minutes
+  - moderate_recreation_days
+  - work_activity_minutes
+  - sedentary_minutes
