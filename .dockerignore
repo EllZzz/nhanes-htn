@@ -1,0 +1,19 @@
+# Entornos y cachés
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.log
+.mypy_cache
+pytest_cache
+.ipynb_checkpoints
+
+# Control de versiones
+.git
+.gitignore
+
+# Otros
+*.ipynb
+dist
+build
