@@ -51,6 +51,53 @@ nhanes_features_selected:
   type: pandas.CSVDataset
   filepath: data/05_model_input/nhanes_features_selected.csv
 
+nhanes_features_rich:
+  type: pandas.CSVDataset
+  filepath: data/05_model_input/nhanes_features_rich_v1.csv
+
+
+# 01_raw/richer_nhanes: módulos de cuestionario adicionales
+
+smq_i:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/richer_nhanes/SMQ_I.csv
+
+smq_j:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/richer_nhanes/SMQ_J.csv
+
+smqfam_i:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/richer_nhanes/SMQFAM_I.csv
+
+smqfam_j:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/richer_nhanes/SMQFAM_J.csv
+
+alq_i:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/richer_nhanes/ALQ_I.csv
+
+alq_j:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/richer_nhanes/ALQ_J.csv
+
+slq_i:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/richer_nhanes/SLQ_I.csv
+
+slq_j:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/richer_nhanes/SLQ_J.csv
+
+dpq_i:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/richer_nhanes/DPQ_I.csv
+
+dpq_j:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/richer_nhanes/DPQ_J.csv
+
 
 # 06_models: artefactos de modelos
 regression_model:
